@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "kalam";
+  src: url(../assets/Fonts/Kalam/Kalam-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "kalam";
+  src: url(../assets/Fonts/Kalam/Kalam-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "kalam";
+  src: url(../assets/Fonts/Kalam/Kalam-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "sweety";
+  src: url(../assets/Fonts/sweety_5/Sweety.ttf);
+}
+
+$font-1: "kalam", sans-serif;
+$font-2: "sweety", serif;
+$blue: #00387b;
+$wood: #eec8a4;
+$gray: #727985;
+$white: #ecf3ec;
+
+:export {
+  font-1: $font-1;
+  font-2: $font-2;
+  color-2: $wood;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  &::selection {
+    color: $blue;
+    background: $gray;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(174deg, $blue 67.78%, $gray 100%) fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h4 {
+  font-family: $font-2;
+  font-weight: 700;
+  color: $white;
+}
+
+h1,
+h2 {
+  font-size: 3.125rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: $font-1;
+  color: $white;
+}
+
+p,
+a,
+span {
+  font-family: $font-1;
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: $white;
+  &::after {
+    color: $wood;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  h1,
+  h2 {
+    font-size: 6rem;
+  }
+
+  h4 {
+    font-size: 3.125rem;
+  }
+
+  p,
+  a,
+  span {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,52 @@
+.contact {
+  position: fixed;
+  top: 6.25rem;
+  right: 0;
+  width: 12.5rem;
+  height: 50%;
+  z-index: 100;
+  background: $gray;
+  border-radius: 1.5rem 0 0 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  span {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  p {
+    font-size: 0.825rem;
+    font-weight: 300;
+  }
+
+  .item-container:first-child::after {
+    position: absolute;
+    top: 24%;
+    transform: translateX(-50%);
+    content: "";
+    height: 0.1rem;
+    width: 50%;
+    background: $wood;
+  }
+  &::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    height: 0.1rem;
+    width: 75%;
+    background: $wood;
+  }
+
+  .hours::after {
+    position: absolute;
+    bottom: 22.5%;
+    transform: translateX(-50%);
+    content: "";
+    height: 0.1rem;
+    width: 50%;
+    background: $wood;
+  }
+}

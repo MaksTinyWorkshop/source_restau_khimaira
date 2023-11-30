@@ -1,0 +1,65 @@
+.section-1 {
+  margin-top: 0.5rem;
+  .box {
+    margin: 2rem 5% 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .carrousel-box {
+      border-radius: 1.5rem;
+      margin-top: 1.5rem;
+      width: 50%;
+      height: 50%;
+      max-width: 420px;
+      max-height: 420px;
+      img {
+        border-radius: 1.5rem;
+      }
+    }
+  }
+  .bottom-box {
+    margin: 5% 0;
+    background: url(../../assets/Séparateurs/Sép1_gris.png);
+    background-size: cover;
+    background-position: center;
+
+    p {
+      margin: 0 5%;
+      text-align: center;
+      min-height: 11rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .section-1 {
+    .bottom-box {
+      position: relative;
+      background: none;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 1.2rem;
+        background: $wood;
+        height: 0.1rem;
+        width: 75%;
+        transform: translateX(18%);
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 1.2rem;
+        background: $wood;
+        height: 0.1rem;
+        width: 75%;
+        transform: translateX(18%);
+      }
+    }
+  }
+}

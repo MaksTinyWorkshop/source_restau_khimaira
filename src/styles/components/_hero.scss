@@ -1,0 +1,18 @@
+.hero {
+  margin-top: 8rem;
+  text-align: center;
+  position: relative;
+
+  .after-box {
+    position: relative;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -1rem;
+    background: $wood;
+    height: 0.1rem;
+    width: 75%;
+    transform: translate(-50%);
+  }
+}

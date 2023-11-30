@@ -1,0 +1,60 @@
+.example-menu {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+
+  .separator {
+    width: 6.25rem;
+    height: 15.125rem;
+    transform: rotate(90deg);
+    background: url(../../assets/Séparateurs/Sép3_gris.png) center/contain
+      no-repeat;
+    margin: -4.5rem;
+  }
+
+  .content-box {
+    background: $blue;
+    border-radius: 1.5rem;
+    .title-part {
+      h2 {
+        font-size: 4rem;
+        color: $wood;
+        text-align: center;
+      }
+      p {
+        margin: 0 1.5rem 1.5rem;
+        color: $gray;
+        font-size: 0.85rem;
+        text-align: center;
+      }
+    }
+    .main-content {
+      background: $gray;
+      margin: 0 0.75rem 0.75rem;
+      border-radius: 1.5rem;
+      padding: 0.375rem;
+      .item {
+        margin: 0.375rem 0;
+        span {
+          color: $wood;
+          font-weight: 700;
+          font-size: 1rem;
+          letter-spacing: 0.05rem;
+        }
+        p {
+          text-align: center;
+          font-size: 0.7rem;
+          letter-spacing: 0.08rem;
+        }
+      }
+    }
+  }
+}

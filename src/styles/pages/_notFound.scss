@@ -1,0 +1,17 @@
+.nf-box {
+  height: 100vh;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    margin: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+}

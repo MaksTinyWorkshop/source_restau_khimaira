@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .footer-separator {
+    width: 70%;
+    height: 6rem;
+    background: url(../../assets/Séparateurs/Sép4_gris.png) center/contain
+      no-repeat;
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    width: 100%;
+    background: $wood;
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem 0;
+      cursor: pointer;
+      .instagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        margin-left: 1.5rem;
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+    .rights {
+      margin-bottom: 1rem;
+      p {
+        text-align: center;
+        color: $blue;
+        font-size: 0.8rem;
+      }
+      .rights-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
