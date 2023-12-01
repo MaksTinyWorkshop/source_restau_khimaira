@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Function to simulate the "writing" of my h2
 const AnimatedTitle = () => {
   const titleAnim = () => {
-    gsap.timeline().fromTo(
+    gsap.fromTo(
       ".letter",
       {
         x: -100,
@@ -17,12 +17,13 @@ const AnimatedTitle = () => {
       {
         x: 0,
         opacity: 1,
-        stagger: 0.33,
-        delay: 0.7,
+        stagger: 0.05,
+
         scrollTrigger: {
           trigger: ".title-box",
-          start: "top center",
-          end: "+=500",
+          start: "bottom bottom",
+          toggleActions: "restart none none reset",
+          markers: true,
         },
       }
     );

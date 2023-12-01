@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Section1 = () => {
-
   // Creating functions to Animate
   const boxAnim = (elem, depart, delay, duration) => {
     gsap.fromTo(
@@ -47,10 +46,10 @@ const Section1 = () => {
       {
         opacity: 1,
         duration: 1,
-        delay: 0.5,
         scrollTrigger: {
           trigger: ".bottom-box",
-          toggleActions: "restart none none none",
+          start: "80% bottom",
+          toggleActions: "restart none none reset",
         },
       }
     );
