@@ -3,9 +3,7 @@ import React from "react";
 const OverlayMenuExample = ({ closeModal }) => {
   return (
     <>
-      <div className="overlay" onClick={closeModal}>
-        &nbsp;
-      </div>
+      <div className="overlay" onClick={closeModal}></div>
       <div className="example-menu">
         <div className="separator"></div>
         <div className="content-box">

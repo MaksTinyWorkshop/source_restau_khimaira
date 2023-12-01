@@ -37,7 +37,7 @@
       .menu-list::after {
         position: absolute;
         content: "";
-        top: 1.3rem;
+        top: 1.5rem;
         height: 0.05rem;
         width: 100px;
         transform: translate(-100%);
@@ -70,7 +70,7 @@
       }
       p {
         text-align: right;
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
       .description-box {
         p {

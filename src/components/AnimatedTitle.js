@@ -23,7 +23,6 @@ const AnimatedTitle = () => {
           trigger: ".title-box",
           start: "bottom bottom",
           toggleActions: "restart none none reset",
-          markers: true,
         },
       }
     );
