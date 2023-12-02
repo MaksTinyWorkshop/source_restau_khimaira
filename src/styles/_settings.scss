@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+
 @font-face {
   font-family: "kalam";
   src: url(../assets/Fonts/Kalam/Kalam-Regular.ttf);
@@ -16,13 +18,9 @@
   font-style: normal;
   font-weight: 300;
 }
-@font-face {
-  font-family: "sweety";
-  src: url(../assets/Fonts/sweety_5/Sweety.ttf);
-}
 
 $font-1: "kalam", sans-serif;
-$font-2: "sweety", serif;
+$font-2: "Fuggles", serif;
 $blue: #00387b;
 $wood: #eec8a4;
 $gray: #727985;
