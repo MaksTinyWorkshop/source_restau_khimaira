@@ -1,12 +1,13 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 const OverlayMenuExample = ({ closeModal }) => {
   return (
     <>
       <div className="overlay" onClick={closeModal}></div>
       <div className="example-menu">
-        <div className="separator"></div>
-        <div className="content-box">
+        <div className="separator" onClick={closeModal}></div>
+        <div className="content-box" onClick={isMobile && closeModal}>
           <div className="title-part">
             <h2>L'eau à la bouche !</h2>
             <p>
