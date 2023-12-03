@@ -101,6 +101,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+
+      .description-box {
+        p {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
