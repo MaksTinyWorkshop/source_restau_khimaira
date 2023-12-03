@@ -30,3 +30,9 @@ Si dans le futur le client me demande d'ajouter une fonctionnalité de réservat
 Pas de tests unitaires faits.
 
 En tant que débutant, le projet a été fait seul de bout en bout...
+
+### Problèmes rencontrés :
+
+J'ai eu des difficultés à comprendre et gérer le hook useContext, ainsi que l'appartion et l'état des modales . Puis, au build, des soucis de nommage m'ont posé quelques problèmes d'affichage.
+
+La prise en main de GSAP a été elle aussi fastidieuse, pas la méthode fromto, mais surtout la méthode scrollTrigger.
